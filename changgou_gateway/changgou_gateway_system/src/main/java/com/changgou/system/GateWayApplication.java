@@ -8,6 +8,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
+/**
+ *
+ *后端的网关
+ * @author yuanqi
+ * @date 2020-03-06 17:16 
+ * @return
+ */
 @SpringBootApplication
 @EnableEurekaClient
 public class GateWayApplication {
