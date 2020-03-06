@@ -17,9 +17,7 @@ import org.springframework.security.oauth2.provider.ClientDetailsService;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
-/*****
- * 自定义授权认证类
- */
+
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
 

@@ -24,7 +24,13 @@ import javax.annotation.Resource;
 import javax.sql.DataSource;
 import java.security.KeyPair;
 
-
+/**
+ *oAuth2认证配置类
+ * @param null
+ * @author yuanqi
+ * @date 2020-03-06 17:06
+ * @return
+ */
 @Configuration
 @EnableAuthorizationServer
 class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
@@ -69,11 +75,7 @@ class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
                 .userDetailsService(userDetailsService);     //用户信息service
     }
 
-    /***
-     * 授权服务器的安全配置
-     * @param oauthServer
-     * @throws Exception
-     */
+
     @Override
     public void configure(AuthorizationServerSecurityConfigurer oauthServer) throws Exception {
         oauthServer.allowFormAuthenticationForClients()
@@ -83,7 +85,13 @@ class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
     }
 
 
-    //读取密钥的配置
+    /**
+     *
+     * 读取密钥的配置
+     * @author yuanqi
+     * @date 2020-03-06 17:04 
+     * @return org.springframework.cloud.bootstrap.encrypt.KeyProperties
+     */
     @Bean("keyProp")
     public KeyProperties keyProperties(){
         return new KeyProperties();
