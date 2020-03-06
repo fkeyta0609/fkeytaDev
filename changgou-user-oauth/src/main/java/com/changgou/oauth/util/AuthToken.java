@@ -2,7 +2,14 @@ package com.changgou.oauth.util;
 
 import java.io.Serializable;
 
-
+/**
+ *
+ *
+ * @param null
+ * @author yuanqi
+ * @date 2020-03-06 17:13 
+ * @return
+ */
 public class AuthToken implements Serializable{
 
     //令牌信息 jwt
